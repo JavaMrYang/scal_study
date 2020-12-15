@@ -15,6 +15,15 @@ class Point(xc:Int,xy:Int){
 object Point_Test {
   def main(args: Array[String]): Unit = {
     val p=new Point(3,5);
-    p.move(6,2)
+    //p.move(6,2)
+    /**
+      * 单例对象
+      */
+    printPoint
+
+    def printPoint: Unit ={
+      println("x 的坐标点;"+p.x)
+      println("y 的坐标点:"+p.y)
+    }
   }
 }
